@@ -1,7 +1,7 @@
 """
 Definition of urls for DjangoWebProject2.
 """
-from app import views
+from app.views import home
 from django.conf.urls import include, url
 
 # Uncomment the next two lines to enable the admin:
@@ -10,7 +10,7 @@ admin.autodiscover()
 
 urlpatterns = [
     # Examples:
-    # url(r'^$', app.views.home, name='home'),
+    url(r'^$', home, name='home'),
     # url(r'^DjangoWebProject2/', include('DjangoWebProject2.DjangoWebProject2.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
